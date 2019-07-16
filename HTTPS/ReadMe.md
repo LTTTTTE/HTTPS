@@ -1,18 +1,21 @@
-Transport Layer ¿¡ SSL ÇÁ·ÎÅäÄÝÀ§¿¡
-Application LayerÀÇ HTTPS ÇÁ·ÎÅäÄÝÀÌ µ¿ÀÛÇÑ´Ù
 
-º¸¾ÈÀÌ´Ù.
+Transport Layer ì— SSL í”„ë¡œí† ì½œìœ„ì—
+Application Layerì˜ HTTPS í”„ë¡œí† ì½œì´ ë™ìž‘í•œë‹¤
 
-SSL º¸¾È ¹æ½ÄÀº 
--´ëÄªÅ° ¾ÏÈ£¹æ½Ä(AES)
--°ø°³Å° (ºñ´ëÄªÅ°) ¾ÏÈ£¹æ½Ä(RSA)
+ë³´ì•ˆì´ë‹¤.
 
-´ëÄªÅ° ¾ÏÈ£¹æ½ÄÀº ¶Õ¸®±â ½±°í ºü¸£´Ù.
-°ø°³Å° ¾ÏÈ£¹æ½ÄÀº ¶Õ¸®±â ¾î·Æ°í ´À¸®´Ù.
+SSL ë³´ì•ˆ ë°©ì‹ì€ 
+-ëŒ€ì¹­í‚¤ ì•”í˜¸ë°©ì‹(AES)
+-ê³µê°œí‚¤ (ë¹„ëŒ€ì¹­í‚¤) ì•”í˜¸ë°©ì‹(RSA)
 
-HTTPS´Â µÑ´Ù ÀûÀýÇÏ°Ô »ç¿ëÇÑ´Ù
-¼¼¼ÇÅ° Àü¼Û½Ã °ø°³Å° ¾ÏÈ£¹æ½ÄÀ¸·Î Àü¼Û
-µ¥ÀÌÅÍ Àü¼Û½Ã ´ëÄªÅ° ¾ÏÈ£¹æ½ÄÀ¸·Î Àü¼Û
+ëŒ€ì¹­í‚¤ ì•”í˜¸ë°©ì‹ì€ ëš«ë¦¬ê¸° ì‰½ê³  ë¹ ë¥´ë‹¤.
+ê³µê°œí‚¤ ì•”í˜¸ë°©ì‹ì€ ëš«ë¦¬ê¸° ì–´ë µê³  ëŠë¦¬ë‹¤.
 
-ÀÌ·¸°Ô ÇÒ½Ã ¶Õ¸®±â ¾î·Æ°í ºü¸£°Ô Àü¼Û°¡´ÉÇÏ´Ù.
+HTTPSëŠ” ë‘˜ë‹¤ ì ì ˆí•˜ê²Œ ì‚¬ìš©í•œë‹¤
+ì„¸ì…˜í‚¤ ì „ì†¡ì‹œ ê³µê°œí‚¤ ì•”í˜¸ë°©ì‹ìœ¼ë¡œ ì „ì†¡
+ë°ì´í„° ì „ì†¡ì‹œ ëŒ€ì¹­í‚¤ ì•”í˜¸ë°©ì‹ìœ¼ë¡œ ì „ì†¡
 
+ì´ë ‡ê²Œ í• ì‹œ ëš«ë¦¬ê¸° ì–´ë µê³  ë¹ ë¥´ê²Œ ì „ì†¡ê°€ëŠ¥í•˜ë‹¤.
+
+
+RSA.html ì½”ë“œëŠ” ìœ„í‚¤ì—ì„œ í¼ì˜´.

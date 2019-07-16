@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body style="margin: 0.5%;padding: 0.5%">
+
+    <form name="form">
+        e <input type="text" name="e">
+        mod() <input type="text" name="mod">
+    </form>
+    
+    <a href="javascript:void(0);" onclick=modular_multiplicative_inverse();>Click me to get the inverse value of mod for d...</a>
+
+    <script>
+        function modular_multiplicative_inverse() {
+
+            var a = Math.abs(document.form.e.value);
+            var n = Math.abs(document.form.mod.value);
+
+            var t = 0;
+            var nt = 1;
+            var r = n;
+            var nr = a % n;
+
+            if (n < 0) {
+                n = -n;
+            }
+            if (a < 0) {
+                a = n - (-a % n);
+            }
+            while (nr !== 0) {
+                var quot = (r / nr) | 0;
+                var tmp = nt;
+                nt = t - quot * nt;
+                t = tmp;
+                tmp = nr;
+                nr = r - quot * nr;
+                r = tmp;
+            }
+            if (r > 1) {
+                return -1;
+            }
+            if (t < 0) {
+                t += n;
+            }
+
+            alert("d value=" + t);
+
+            return t;
+        }
+    </script>
+</body>
+
+</html>
